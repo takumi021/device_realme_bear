@@ -340,6 +340,9 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# RealmeDirac
+$(call inherit-product, $(LOCAL_PATH)/app/RealmeDirac/dirac.mk)
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -450,6 +453,3 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/r5x/r5x-vendor.mk)
-
-# RealmeDirac
-$(call inherit-product, $(LOCAL_PATH)/RealmeDirac/dirac.mk)
