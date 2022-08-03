@@ -462,4 +462,7 @@
            <item>0</item> <!-- COLOR_MODE_NATURAL -->
            <item>1</item> <!-- COLOR_MODE_BOOSTED -->
                             </integer-array>
+
+    <!-- Does the device have a notification led -->
+    <bool name="config_hasNotificationLed">false</bool>
 </resources>
