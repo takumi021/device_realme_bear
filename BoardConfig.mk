@@ -74,8 +74,6 @@ LOC_HIDL_VERSION := 3.0
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
-ODM_MANIFEST_SKUS += RMX1927
-ODM_MANIFEST_RMX1927_FILES := $(DEVICE_PATH)/configs/manifests/manifest_RMX1927.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_bear
@@ -99,9 +97,6 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := vendor/RMX1911_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/realme/bear
-
-# NFC
-TARGET_USES_NQ_NFC := true
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
