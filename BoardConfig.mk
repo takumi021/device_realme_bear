@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/r5x
+DEVICE_PATH := device/realme/bear
 
 BOARD_VENDOR := realme
 
@@ -30,7 +30,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1911,RMX1925,RMX1927,RMX2030,r5x
+TARGET_OTA_ASSERT_DEVICE := RMX1911,RMX1925,RMX1927,RMX2030,bear
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -78,8 +78,8 @@ ODM_MANIFEST_SKUS += RMX1927
 ODM_MANIFEST_RMX1927_FILES := $(DEVICE_PATH)/configs/manifests/manifest_RMX1927.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_r5x
-TARGET_RECOVERY_DEVICE_MODULES := libinit_r5x
+TARGET_INIT_VENDOR_LIB := libinit_bear
+TARGET_RECOVERY_DEVICE_MODULES := libinit_bear
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 cgroup.memory=nokmem,nosocket
@@ -98,7 +98,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 TARGET_KERNEL_CONFIG := vendor/RMX1911_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/realme/r5x
+TARGET_KERNEL_SOURCE := kernel/realme/bear
 
 # NFC
 TARGET_USES_NQ_NFC := true
@@ -187,4 +187,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/realme/r5x/BoardConfigVendor.mk
+-include vendor/realme/bear/BoardConfigVendor.mk

@@ -14,20 +14,20 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 ARROW_GAPPS := true
 TARGET_BOOT_ANIMATION_RES := 720
 
-# Inherit from r5x device
+# Inherit from bear device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Realme
-PRODUCT_DEVICE := r5x
+PRODUCT_DEVICE := bear
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := arrow_r5x
+PRODUCT_NAME := arrow_bear
 PRODUCT_MODEL := Realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
-TARGET_VENDOR_PRODUCT_NAME := r5x
-TARGET_VENDOR_DEVICE_NAME := r5x
+TARGET_VENDOR_PRODUCT_NAME := bear
+TARGET_VENDOR_DEVICE_NAME := bear
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="r5x" \
+    PRODUCT_NAME="bear" \
     PRIVATE_BUILD_DESC="trinket-user 10 QKQ1.200209.002 release-keys"
