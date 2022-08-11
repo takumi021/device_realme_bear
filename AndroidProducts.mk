@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_r5x.mk
+    $(LOCAL_DIR)/arrow_bear.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_r5x-user \
-    arrow_r5x-userdebug \
-    arrow_r5x-eng
+    arrow_bear-user \
+    arrow_bear-userdebug \
+    arrow_bear-eng
