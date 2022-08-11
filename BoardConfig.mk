@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/r5x
+DEVICE_PATH := device/realme/bear
 
 BOARD_VENDOR := realme
 
@@ -15,7 +15,7 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX1911,RMX1925,RMX1927,RMX2030,r5x
+TARGET_OTA_ASSERT_DEVICE := RMX1911,RMX1925,RMX1927,RMX2030,bear
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1600
@@ -47,8 +47,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_r5x
-TARGET_RECOVERY_DEVICE_MODULES := libinit_r5x
+TARGET_INIT_VENDOR_LIB := libinit_bear
+TARGET_RECOVERY_DEVICE_MODULES := libinit_bear
 
 # Architecture
 TARGET_ARCH := arm64
@@ -79,7 +79,7 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_SOURCE := kernel/realme/r5x
+TARGET_KERNEL_SOURCE := kernel/realme/bear
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/RMX1911_defconfig
 
@@ -222,4 +222,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/realme/r5x/BoardConfigVendor.mk
+-include vendor/realme/bear/BoardConfigVendor.mk

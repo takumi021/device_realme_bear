@@ -5,9 +5,9 @@
 //
 
 cc_library_static {
-    name: "libinit_r5x",
+    name: "libinit_bear",
     recovery_available: true,
-    srcs: ["init_r5x.cpp"],
+    srcs: ["init_bear.cpp"],
     whole_static_libs: ["libbase"],
     header_libs: [
         "libbase_headers",
