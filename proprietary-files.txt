@@ -2746,8 +2746,7 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|c82d3f7c0e6f9f30a42a0e4158077
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|eafe7c9254077253ad9512fa5622948954769420
 
 # Fingerprint
-vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service-rbs
 vendor/lib/libalipay_factory.so
 vendor/lib/libhypnusclient.so
 vendor/lib/librpmbengclient.so
@@ -2779,6 +2778,9 @@ vendor/firmware/egista.b05
 vendor/firmware/egista.b06
 vendor/firmware/egista.b07
 vendor/firmware/egista.mdt
+
+# Fingerprint Prebuilt
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.bear
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
